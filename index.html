@@ -1,0 +1,55 @@
+<head>
+    <script src='jquery.3.5.1.min.js'></script>
+    <script src='index.js'></script>
+    <script src='session.js'></script>
+    <script src='time.js'></script>
+    <script src='table.js'></script>
+    <script src='storage.js'></script>
+    <script src='duration.js'></script>
+    <script src='detail.js'></script>
+    <script src='easter_egg.js'></script>
+    <link rel='stylesheet' href='w3.css'>
+    <link rel='stylesheet' href='index.css'>
+</head>
+
+<body>
+    <div class='w3-panel section top_section'>
+        <h2>Detail picker</h2>
+        <div id='month_div' class='inline'><select id='month' class='w3-select' name='month' onchange="month()"></select></div>
+        <div id='day_div' class='inline'><select id='day' class='w3-select' onchange="day()"></select></div>
+        <div id='year_div' class='inline'><select id='year' class='w3-select'></select></div>
+        <div class='generate-detail-picker'></div>
+        <button class='w3-button w3-green' onclick="class_editor()">Class editor</button>
+
+    </div>
+    <div class='w3-panel section'>
+        <h2 class='autosave'>Duration</h2>
+        <button class='w3-button w3-gray autosave'>Auto Save</button>
+
+        <div class='generate-grid-session'></div>
+        <button id='toggle' class='w3-button w3-blue start' onclick='toggle()'>Start</button>
+        <button class='w3-button w3-green' onclick='call_save()'>Save</button>
+        <button class='w3-button w3-yellow' onclick='reset()'>Reset</button>
+    </div>
+    <div class='w3-panel section bottom_section'>
+        <h2>Results</h2>
+        <div id='calendar'>
+            <h2 class='w3-button w3-green inline'>&lt;</h2>
+            <h2 class='w3-button w3-green inline'>May 31st - June 6th, 2020</h2>
+            <h2 class='w3-button w3-green inline'>&gt;</h2>
+        </div>
+        <div id='result-table'>
+        </div>
+        <div style='margin-top:20px; margin-bottom:-20px;'>
+            <button class='w3-button w3-green'>Export as spreedsheet file</button>
+        </div>
+    </div>
+
+    <!-- Easter egg. Color randomizer with color locks. -->
+    <!--
+    <button onclick='toggle_body_background_lock()'>Lock body background color</button>
+    <button onclick='toggle_div_background_lock()'>Lock div background color</button>
+    <button onclick='toggle_div_lock()'>Lock div color</button>
+    <button onclick='set_random_color()'>random color</button>
+    -->
+</body>

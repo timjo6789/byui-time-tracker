@@ -1,0 +1,143 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.grid-radio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: auto;
+}
+.credit input {
+    width: 50%;
+}
+.class input {
+    width: 100%;
+}
+input {
+    background-color: #110044;
+    color: #60abc4;
+    border-color: 60abc4;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.item {
+    padding: 8px 16px;
+    background-color: green;
+    color: white;
+}
+.card button {
+    width: 100%;
+}
+.card2 {
+    grid-column: 4 / 6;
+    width: 100%;
+    
+    height: auto;
+    color: white;
+    padding-top: 3%;
+    background-color:#268AC6;
+}
+
+.card3 {
+    grid-column: 1 / 4;
+}
+.card3_left {
+    grid-column: 1 / 4;
+}
+.card3_left button {
+    width: 100%;
+}
+.card3_right {
+    grid-column: 4 / 7;
+}
+.card3_right button {
+    width: 100%;
+}
+.card3 button {
+    width: 100%;
+}
+
+
+div.radio {
+    margin: 0;
+}
+input[type="radio"] {
+    display:none;
+}
+input + label {
+    background-color: #2196f36b;
+    padding: 8px 16px;
+    color: white;
+}
+input:checked + label {
+    background-color: #2196F3;
+    color: white;
+}
+
+/***
+    Better layout.
+***/
+.each-row {
+    display: grid;
+    grid-template-columns: 150px 105px 6.7% 8% 9.7% 1fr 150px 1fr;
+    grid-column-gap: 5px;
+    padding-left: 5px;
+    align-items:center;
+    justify-content: center;
+}
+.each-row input[type="number"] {
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.each-row input[type="number"]::-webkit-outer-spin-button,
+.each-row input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.each-row input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.each-row button.w3-red {
+    width: 75%;
+    margin-left: 25px;
+}
+.each-row div label {
+    margin-top:50px;
+}
+
+.main-grid {
+    display:grid;
+    grid-row-gap:5px;
+}
+
+.second-last-row {
+    display: grid;
+    padding-left: 5px;
+    grid-template-columns: 55% 30% 15%;
+    grid-column-gap: 5px;
+    text-align: center;
+}
+.second-last-row div {
+    color: white;
+    background-color:#268AC6;
+    padding: 10px;
+}
+
+.last-row {
+    display: grid;
+    padding-left: 5px;
+    grid-template-columns: 55% 35.9% 7.3%;
+    grid-column-gap: 5px;
+    text-align: center;
+}

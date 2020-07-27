@@ -1,0 +1,37 @@
+<head>
+    <script src='jquery.3.5.1.min.js'></script>
+    <script src='class_editor.js'></script>
+    <script src='storage.js'></script>
+    <script src='time.js'></script>
+    <link rel='stylesheet' href='w3.css'>
+    <link rel='stylesheet' href='index.css'>
+    <link rel='stylesheet' href='class_editor.css'>
+</head>
+
+<body>
+    <div class='section top_section main-grid'>
+        <div class='each-row' id='difficulty-main-1'>
+            <h5>Class Name</h5>
+            <h5>Credit / Hour</h5>
+            <div></div>
+            <div>
+                <h5>Difficulty</h5>
+            </div>
+            <div></div>
+            <h5>Calculated</h5>
+            <h5>Override</h5>
+            <h5></h5>
+        </div>
+            
+        <div class='second-last-row'>
+            <button class='w3-button w3-green' onclick="add_row()">Add Row</button>
+            <div id='total'>12:00:00</div>
+        </div>
+        
+        <div class='last-row'>
+            <button class='w3-button w3-green' onclick="save_and_exit()">Save and Exit</button>
+            <button class='w3-button w3-red' onclick="cancel()">Cancel</button>
+            <button class='w3-button w3-yellow' onclick="reset()">Reset</button>
+        </div>
+    </div>
+</body>
